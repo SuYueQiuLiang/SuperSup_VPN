@@ -34,7 +34,7 @@ import java.lang.ref.WeakReference
 class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(), OnClickListener {
     override val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     override val viewModel: MainActivityViewModel by viewModels()
-    private var active = false
+    private var active = true
     private val connectHandler by lazy { ConnectHandler(WeakReference(this)) }
     private var updateConnectTimeJob: Job? = null
     private var progressJob: Job? = null
@@ -127,10 +127,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(),
             policyAlert()
     }
 
-    override fun onStart() {
-        super.onStart()
-        active = true
-    }
 
     override fun onResume() {
         super.onResume()
@@ -169,6 +165,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(),
 
     override fun onPause() {
         super.onPause()
+        active = true
         updateConnectTimeJob?.cancel()
     }
 
