@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SuperSup VPN</string>
+
+    <string name="connecting_time">Connecting time</string>
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting…</string>
+    <string name="connected">Connected</string>
+    <string name="disconnecting">Disconnecting…</string>
+
+    <string name="connect_time_format">%s:%s:%s</string>
+
+    <string name="policy_alert">Due to the policy reason , this service is not available in your country</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="network_alert">Network request timed out. Please make sure your network is connected</string>
+    <string name="ok">OK</string>
+
+    <string name="disconnect_alert">If you want to connect to another VPN, you need to disconnect the current connection first. Do you want to disconnect the current connection?</string>
+    <string name="sure">Sure</string>
+    <string name="back">Back</string>
+
+    <string name="select_server">Select Server</string>
+    <string name="server">Server</string>
+    <string name="setting">Setting</string>
+
+    <string name="privacy">Privacy agreement</string>
+    <string name="update">Update</string>
+    <string name="share">Share</string>
+
+    <string name="connected_succeeded">Connected Succeeded</string>
+    <string name="disconnected_succeeded">Disconnected Succeeded</string>
+</resources>
